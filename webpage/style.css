@@ -1,0 +1,205 @@
+/*DECLARING FONT----------*/
+@font-face {
+    font-family: Oreo;
+    src: url("font/oreos/oreos.ttf");
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* HOME CSS ---------------------------------- */
+.header {
+    min-height: 800px;
+    width: 100%;
+    background-image:linear-gradient(rgba(0, 0, 0, 0.7),rgba(59, 59, 59, 0.7)),url(images/Oreo-home-image.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+nav{
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-links{
+    flex: 1;
+    text-align: center;
+}
+
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+
+.nav-links ul li a{
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.nav-links ul li::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: rgb(85, 50, 20);
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+
+.nav-links ul li:hover::after{
+    width: 100%
+}
+
+.title-box{
+    padding-top: 200px;
+    width: 100%;
+    color: white;
+    position: absolute;
+    text-align: center;
+}
+
+.title-box h1{
+    font-size: 75px;
+    font-family: oreo;
+    font-style: oblique;
+    letter-spacing: 5px;
+}
+
+.title-box p{
+   margin: 10px 0 40px;
+   font-size: 14px;
+   color: rgb(255, 255, 255);
+   font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+nav .fa-solid{
+    display: none;
+}
+
+@media(max-width: 500px){
+    .title-box h1{
+        font-size: 30px;
+    }
+
+    .nav-links ul li a{
+        font-size: 12px;    
+    }
+
+    .nav-links ul li{
+        display: block;
+    }
+
+    .nav-links ul{
+        padding: 30px;
+    }
+
+    .nav-links{
+        position: absolute;
+        background: rgb(85, 50, 20);
+        height: 800px;
+        width: 200px;
+        right: -200px;
+        top: 0;
+        text-align: left;
+        z-index: 2;
+        transition: 1s;
+    }
+
+    nav .fa-solid{
+        align-items: left;
+        display: block;
+        color: white;
+        margin: 10px;
+        font-size: 22px;
+        cursor: pointer;
+
+    }
+ 
+}
+
+/* HISTORY CSS ---------------------------------- */
+.history-page{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 50px;
+}
+h1{
+    font-size: 36px;
+    font-weht: 600;
+    font-family: oreo;
+    padding: 10px;
+}
+p{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 10px;
+    padding-bottom: 20px;
+}
+
+.learn-more{
+    display: inline-block;
+    text-decoration: none;
+    color: black;
+    border: 2px solid black;
+    padding: 14px;
+    font-size: 14px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    position: relative;
+    cursor: pointer;
+
+}
+
+.learn-more:hover{
+    border: 2px solid rgb(85, 50, 20);
+    background-color: rgb(85, 50, 20);
+    color: white;
+    transition: 0.5s;
+}
+
+.flavors-page{
+    
+    margin: auto;
+    text-align: center;
+    padding-top: 50px;
+}
+
+.row{
+    display: flex;
+    justify-content: space-between;
+
+}
+h3{
+    color: rgb(85, 50, 20);
+    font-size: 22px;
+    padding-bottom: 20px;
+}
+.flavor-col{
+    flex-basis: 30%;
+    background:rgb(85, 50, 20);
+    border: 2px rgb(85, 50, 20);
+    border-radius: 10px;
+    color: white;
+
+}
+h4{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 5px;
+}
+
+.ending{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 14px;
+    padding-top: 20px;
+    text-align: center;
+    padding-bottom: 20px;
+
+}

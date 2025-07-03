@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>McGaughey Responsive Web Interface Prototype</title>
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+
+<body> 
+<!-- link for icons-->
+<script src="https://kit.fontawesome.com/2e52bc1922.js" crossorigin="anonymous"></script>
+
+
+
+<!-- TOP NAV BAR -->
+<section class="header">
+    <nav>
+        <div class="nav-links" id="navLinks">
+            <i class="fa-solid fa-xmark" style="color:#ffffff;" onclick="hideMenu()"></i>
+            <ul>
+                <li><a href="">HOME</a></li>
+                <li><a href="history">HISTORY</a></li>
+                <li><a href="">FLAVORS</a></li>
+            </ul>
+        </div>
+        <i class="fa-solid fa-bars" style="color:#ffffff;" onclick="showMenu()"></i>
+    </nav> 
+ <!-- TITLE-->
+    <div class="title-box">
+        <h1>OREO</h1>
+        <p>Alyssa McGaughey</p>
+    </div>
+
+</section>
+
+<!-- HISTORY PAGE-->
+<section class="history-page" id="/history">
+    <h1>Oreo's History</h1>
+    <p>Over 100 years ago in 1912, Nabisco introduced the Oreo to the cookie market. 
+        Originally meant to be a more elegant alternative to a cookie already in the market called the Hydrox. 
+        Although the original 2 chocolate disks seperated by a cream filling architure has stayed true, over the 
+        years Oreo has introduced many different flavors.     </p>
+
+    <a href="https://www.backthenhistory.com/articles/the-history-of-oreos" class="learn-more"> Learn More About the History Here</a>
+</section> 
+
+<!-- FLAVORS PAGE-->
+<section class="flavors-page" id="/history">
+    <h1>Flavors</h1>
+    <p> While Oreo has released over 85 different flavors, only a few wil be highlighted here.</p>
+    <h3>Original</h3>
+    <div class="row">
+        
+        <div class="flavor-col">
+            <h4>Chocolate Cream</h4>
+            <h4>Golden</h4>
+            <h4>Red Velvet</h4>
+            <h4>Birthday Cake</h4>
+            <h4>Mint</h4>
+        </div>
+
+        <div class="flavor-col">
+            <h4>Peanut Butter</h4>
+            <h4>Lemon</h4>
+            <h4>Smores</h4>
+            <h4>Cookie Dough</h4>
+            <h4>Brownie Batter</h4>
+        </div>
+
+        <div class="flavor-col">
+            <h4>Cotton Candy</h4>
+            <h4>Toasted Coconut</h4>
+            <h4>Pumpkin Spice</h4>
+            <h4>Gingerbread</h4>
+            <h4>Watermelon</h4>
+        </div>
+
+    </div>
+
+</section>
+
+<section class="ending">
+    <h5> Alyssa McGaughey @2025</h5>
+</section>
+
+
+
+
+
+<!-- JAVASCRIPT FUNCTIONS-->
+<script>
+
+    //TOGGLE MENU
+    var navLinks = document.getElementById("navLinks");
+    function showMenu(){
+        navLinks.style.right = "0";
+    }
+
+
+    function hideMenu(){
+        navLinks.style.right = "-200px";
+    }
+
+</script>
+
+
+</body>
+</html>
